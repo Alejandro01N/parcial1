@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:  #68E5BF;
+    background: radial-gradient(to right ,#68E5BF, #3ada9c );
+}
+
+.co{
+    background-color: #4BCFA7 ;
+    border: solid #4bcfa767 4px;
+    /* border-radius: 10px; */
+    box-shadow: 0 0 30px rgb(4, 114, 90);
+    height: 95vh;
+}
+
+.img{
+    display: block;
+    height: 85vh;
+    width: 100vh;
+}
+
+
