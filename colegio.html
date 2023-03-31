@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ventor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container my-5 ">
+        <div class="row align-items-stretch">
+            <div class="col-lg-6 col-12 co rounded-5">
+                <div class="contenedor container">
+                    <h2 class="fw-bold text-center my-4 ">
+                        Registrar colegio
+                    </h2>
+                    <form action="./menu.html" id="formColegio">
+                        <div class="ND mb-3">
+                            <div class="">
+                                <label for="" class="form-label">Nit:</label>
+                                <input type="number" maxlength="4" class="form-control" name="" id="nit" oninput="maxLenghtNumber(this);">
+                            </div>
+                            <div class="telefono">
+                                <label for="" class="form-label telefono">Telefono:</label>
+                                <input type="number" maxlength="10" class="form-control" name="" id="telefono" oninput="maxLenghtTelefono(this)">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="" class="form-label">Institución:</label>
+                            <input type="text" class="form-control" name="" id="institucion">
+                        </div>
+                        <div class="ND mb-3">
+                            <div class="direccion">
+                                <label for="" class="form-label ">Direccion:</label>
+                                <input type="text" class="form-control " name="" id="direccion">
+                            </div>
+                            <div class="">
+                                <label for="" class="form-label"">fecha vinculaión:</label>
+                                <input type="date" class="form-control" name="" id="fecha">
+                            </div>
+                        </div>
+                        <div class="RC">
+                            <div class="mb-3" >
+                                <label for=""class="form-label">Rector:</label>
+                                <input type="text" class="form-control" name="" id="rector">
+                            </div>
+                            <div class="mb-3" >
+                                <label for=""class="form-label">Correo:</label>
+                                <input type="text" class="form-control" name="" id="correo">
+                            </div>
+                        </div>
+
+                        <p class="warnings" id="warningsColegio"></p>
+                        
+                        <div class="container my-3">
+                            <div class="row">
+                                <div class="col d-grid">
+                                    <input type="submit" value="Enviar" class="btn btn-primary">
+                                </div>
+                                <div class="col d-grid">
+                                    <input type="submit" value="Cancelar" class="btn btn-secondary">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="contenedor d-none d-lg-block ">
+                    <img src="./img/logo.svg" alt="" class="img-fluid m-4 img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./ventor/js/bootstrap.bundle.min.js"></script>
+    <script src="validacionColegio.js"></script>
+</body>
+</html>

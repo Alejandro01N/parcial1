@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./ventor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container my-5 ">
+        <div class="row align-items-stretch">
+            <div class="col-lg-6 col-12 co rounded-5">
+                <div class="contenedor container">
+                    <h2 class="fw-bold text-center my-4 ">
+                        Registrar operario
+                    </h2>
+                    <form action="menu.html">
+                        <div class="CT mb-3">
+                            <div class="">
+                                <label for="cedula" class="form-label">Cedula:</label>
+                                <input type="number" class="form-control" name="" id="cedula">
+                            </div>
+                            <div class="">
+                                <label for="telefono" class="form-label telefono">Telefono:</label>
+                                <input type="number" maxlength="10" class="form-control" name="" id="telefono" oninput="maxLengthTelefono(this)">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" name="" id="nombre">
+                        </div>
+                        <div class="ND mb-3">
+                            <div class="direccion">
+                                <label for="direccion" class="form-label ">Correo:</label>
+                                <input type="text" class="form-control " name="" id="direccion">
+                            </div>
+                            <div class="">
+                                <label for="sueldo" class="form-label"">Sueldo:</label>
+                                <input type="number" class="form-control" name="" id="sueldo">
+                            </div>
+                        </div>
+                        <div class="EDS">
+                            <div class="mb-3" >
+                                <label for=""class="form-label">Edad:</label>
+                                <input type="number" class="form-control" name="" id="edad">
+                            </div>
+                            <div class="mb-3 direccion" >
+                                <label for=""class="form-label">Dirección:</label>
+                                <input type="text" class="form-control" name="" id="carrera">
+                            </div>
+                            <div class="mb-3" >
+                                <label for=""class="form-label">Sexo:</label>
+                                <select name="" id="" class="form-control" >
+                                    <option value="">Hombre</option>
+                                    <option value="">Mujer</option>
+                                    <option value="">otros</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <p class="warnings" id="warningsColegio"></p>
+                        
+                        <div class="container my-3">
+                            <div class="row">
+                                <div class="col d-grid">
+                                    <input type="submit" value="Enviar" class="btn btn-primary">
+                                </div>
+                                <div class="col d-grid">
+                                    <input type="submit" value="Cancelar" class="btn btn-secondary">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="contenedor d-none d-lg-block ">
+                    <img src="./img/logo.svg" alt="" class="img-fluid m-4 img">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./ventor/js/bootstrap.bundle.min.js"></script>
+    <script src="validacionOperario.js"></script>
+</body>
+</html>

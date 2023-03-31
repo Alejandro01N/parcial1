@@ -4,23 +4,258 @@
     padding: 0;
 }
 
-body{
-    background:  #68E5BF;
-    background: radial-gradient(to right ,#68E5BF, #3ada9c );
-}
-
 .co{
-    background-color: #4BCFA7 ;
-    border: solid #4bcfa767 4px;
+    background-color: whitesmoke ;
+    border: solid #eaf3e760 4px;
     /* border-radius: 10px; */
-    box-shadow: 0 0 30px rgb(4, 114, 90);
-    height: 95vh;
+    box-shadow: 5px 5px 10px rgba(13, 14, 13, 0.774);
+    height: auto;
 }
 
 .img{
     display: block;
-    height: 85vh;
+    height: 75vh;
     width: 100vh;
 }
+
+.ND{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr); 
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.telefono{
+    grid-column: span 2;
+}
+
+.direccion{
+    grid-column: span 2;
+}
+
+.RC{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr); 
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.CT{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr); 
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.EDS{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr); 
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #e71313;
+    padding-top: 20px;
+}
+
+.navbar{
+    padding: .7em;
+    background-color: rgba(6, 158, 39, 0.76);
+}
+
+.navbar-collapse{
+    align-items: center;
+    /* Con el justify-content: space-between nos permite separa lo que querramos con unas medidas especifica
+    por ejemplo en este caso como solo tenemos dos hijo en este contenedor uno va al inicio que es la <a/>
+    y el otro va al final que es la <U/> */
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif ;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+.seccion-texto{
+    font-size: 1.2rem;
+}
+.texto-negro{
+    color: black;
+}
+
+.texto-blanco{
+    color: white;
+}
+
+.sobre-mi{
+    height: auto;
+    padding: 10px;
+    margin: 20px 20px 60px;
+}
+
+.sobre-mi .contenedor{
+    max-width: 600px;
+    
+}
+
+
+.informacion{
+    padding-left: 30px;
+}
+
+.contacto .container{
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
+}
+
+.contacto .retangulo{
+    margin-top: -5rem;
+    background-color: rgb(13, 110, 253);
+    border-radius: 10px;
+    box-shadow: 0px 1px 4px 1px white;
+}
+
+.contacto .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto .descripcion{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contacto button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover{
+    background-color: white;
+    color: black;
+}
+
+.contacto button i{
+    color: white;
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i{
+    color: black;
+}
+
+footer{
+    min-height: 500px;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion-oscura{
+    color: white;
+    background-color: #1b1b32;
+}
+
+.footer-logo{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.iconos-redes-sociales a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales i{
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover{
+    background-color: white;
+    border: 2px solid rgb(13, 110, 253);
+}
+
+.iconos-redes-sociales a:hover i{
+    color: black;
+}
+
+.derecho-de-autor{
+    font-size: 15px;
+    color: #aeaeae;
+    padding: 20px;
+}
+
+@media screen and (max-width: 816px){
+    .navbar-brand{
+        display: none;
+    }
+}
+
+@media screen and ( min-width: 700px){
+    .hero-inferior-imagen{
+        max-width: 600px;
+    }
+}
+
+@media screen and (max-width: 759px){
+    .informacion{
+        font-size: .9rem;
+        padding-left: 1px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .overlay p{
+        font-size: 18px;
+    }
+
+    .overlay i{
+        font-size: 40px;
+    }
+}
+
+
 
 

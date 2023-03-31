@@ -10,36 +10,39 @@
 </head>
 <body>
 
-    <div class="container my-2 ">
+    <div class="container my-5 ">
         <div class="row align-items-stretch">
 
             <div class="col co rounded-5">
 
                 <div class="contenedor">
 
-                    <h2 class="fw-bold text-center py-5">Bienvenidos</h2>
+                    <h2 class="fw-bold text-center py-4">Bienvenidos</h2>
 
-                 <form action="#">
-                    <div class="mb-4">
-                        <label for="email" class="form-label">Correo electronico</label>
-                        <input type="email" class="form-control" name="email">
-                    </div>
-                    <div class="mb-4"></div>
-                    <label for="password" class="form-label">Contraseña</label>
-                    <input type="password" class="form-control" name="password">
-                    <div class="mb-4">
-                        <input type="checkbox" name="connected" class="form-check-input" id="">
-                        <label for="connected" class="form-check-label">Mantener conectado</label>
-                    </div>
+                    <form action="menu.html" method="" id="form">
+                        <div class="mb-4">
+                            <label for="email"  class="form-label">Correo electronico</label>
+                            <input type="text" class="form-control" name="email" id="email">
+                        </div>
+                        <div class="mb-4">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" name="password" id="password">
+                        </div>
+                        <div class="mb-4">
+                            <input type="checkbox" name="connected" class="form-check-input" id="">
+                            <label for="connected" class="form-check-label">Mantener conectado</label>
+                        </div>
 
-                    <div class="d-grid">
-                        <button class="btn btn-primary">Iniciar Sesión</button>
-                    </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                        </div>
 
-                    <div class="my-3">
-                        <span>¿Olvido su contraseña? <a href="#">Recuperar contraseña</a></span>
-                    </div>
-                 </form>
+                        <p class="warnings" id="warnings"></p>
+
+                        <div class="my-3">
+                            <span>¿Olvido su contraseña? <a href="#">Recuperar contraseña</a></span>
+                        </div>
+                    </form>
 
                 </div>
 
@@ -51,6 +54,7 @@
         </div>
     </div>
 
+    <script src="./validacion.js"></script>
 
  <script src="./ventor/js/bootstrap.bundle.min.js"></script>
 
